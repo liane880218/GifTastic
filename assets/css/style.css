@@ -1,0 +1,59 @@
+body{
+    background: url("background_img.png");   
+}
+
+label, input, button, p, h1{
+    font-family: 'Coiny', cursive;
+    color:black;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 36px;
+}
+
+#buttonsContainer{
+    margin-top: 1%;
+    padding: 1%;
+}
+
+#picturesContainer{
+    margin-top: 1%;
+    width: 960px;
+    float: left;
+    padding: 1%;
+}
+
+ aside{
+    margin-top: 1%;
+    float: right;
+    width: 400px;
+    padding: 1%;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.imgRating{
+    float: left;
+    margin: 1%;    
+}
+
+#resetButton, #addButton, button{
+    border-radius: 8px;
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover { 
+    transform: scale(1.1);
+    opacity: 0.8;
+}
