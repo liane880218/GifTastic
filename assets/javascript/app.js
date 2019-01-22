@@ -4,17 +4,17 @@ $(document).ready(function() {
     //Variables
     var animalsArray = ["dog", "cat", "rabbit", "hamnster", "skunk", "goldfish", "bird", "ferret", "turtle", "sugar glider", "chinchilla", 
     "hedgehog", "hermit crab", "gerbil", "pygmy goat", "chicken", "capybara", "teacup pig", "serval", "salamander", "frog"];
-    var buttonID = "";
-    var buttonName = "";
-    var exist = "";
-    var topic = "";
-    var Key = "";
-    var imgURL = "";
-    var title = "";
-    var newButtonID = "";
-    var newBotton = "";
-    var image = "";
-    var rating = "";
+    var buttonID = "",
+        buttonName = "",
+        exist = "",
+        topic = "",
+        Key = "",
+        imgURL = "",
+        title = "",
+        newButtonID = "",
+        newBotton = "",
+        image = "",
+        rating = "";
 
     //Appending a button for each element on the array
     function addButtons(value){
@@ -58,10 +58,10 @@ $(document).ready(function() {
                     rating = $("<p>");
                     rating.text("Raiting: " + response.data[i].rating);
                     image = $("<img>");
-                    image.attr("src", response.data[i].images.original.url);
+                    image.attr("src", response.data[i].images.original_still.url);
                     image.attr("data-animate", response.data[i].images.original.url);
                     image.attr("data-still", response.data[i].images.original_still.url);
-                    image.attr("data-state", "animate");
+                    image.attr("data-state", "still");
                     image.attr("class", "gif");
                     $(container).append(rating);  
                     $(container).append(image); 
